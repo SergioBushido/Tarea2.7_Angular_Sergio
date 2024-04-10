@@ -4,11 +4,14 @@ import { HomeComponent } from './component/home/home.component';
 import { UsuarioComponent } from './component/usuario/usuario.component';
 import { ArticuloComponent } from './component/articulo/articulo.component';
 import { IniciarSesionComponent } from './component/iniciar-sesion/iniciar-sesion.component';
+import { RegisterComponent } from './component/register.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'usuario', component: UsuarioComponent },
   { path: 'articulo', component: ArticuloComponent },
+  { path: 'register', component: RegisterComponent },
+
   { path: 'iniciar-sesion', component: IniciarSesionComponent },
   // Redirecciona cualquier ruta no encontrada a Home, opcionalmente puedes crear un componente para Página no encontrada
   { path: '**', redirectTo: '', pathMatch: 'full' }

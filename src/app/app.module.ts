@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'; // Importar HttpClientModule
+import { ReactiveFormsModule } from '@angular/forms'; // Importa ReactiveFormsModule
+import { RegisterComponent } from './component/register.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,11 +17,14 @@ import { IniciarSesionComponent } from './component/iniciar-sesion/iniciar-sesio
     HomeComponent,
     UsuarioComponent,
     ArticuloComponent,
-    IniciarSesionComponent
+    IniciarSesionComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    RegisterComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
